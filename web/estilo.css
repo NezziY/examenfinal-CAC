@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+body{
+    background-color: #326299;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    margin-top: 0px;
+    width: 500px;
+    position: fixed;
+    z-index: 2;
+    text-align: right;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav li a{
+    background-color: #C75A50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav li a:hover{
+    background-color: #7a2f28;
+}
+
+.nav > li{
+    float: left;
+
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+
+
+header{
+    width: 100%;
+    height: 320px;
+    background: #E9DAC1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(images/logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title{
+    width: 700px;
+    overflow: hidden;
+}
+
+.alpa{
+    width: 240px;
+    transform: translateY(272px)  rotate(-8deg);
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.623));
+    transition: transform 0.5s ease;
+    
+}
+
+.title:hover img{
+    transform: translateY(10px) rotate(-7deg) translateY(9px);
+}
+
+
+/*FORMULARIOS*/
+
+
+.box{
+    margin: 30px;
+    text-align: center;
+    color: black;
+    padding: 5%;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+/*ESQUEMA GRID PRINCIPAL*/
+
+.parent{
+    min-height: 400px;
+    display: grid;
+    grid-template-areas: 
+    "galeri galeri asid"
+    "foot foot foot";
+}
+
+.parent section{ grid-area: galeri;}
+.parent aside{grid-area:asid;}
+.parent footer{grid-area: foot;}
+
+
+
+/*LISTA DE DESEOS*/
+
+aside{
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+
+/*ARTICULOS*/
+
+
+.galeria{
+    margin: 30px;
+    
+}
+
+.galeria h1{
+    text-align: center;
+    color: white;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.mercha{
+    text-align: center;
+    color: white;
+}
+
+.articulos img{
+    width: 100%;
+    
+}
+
+.articulos{
+    margin: 5px;
+    border-radius: 10%;
+    background-color:#122D4D;
+    overflow: hidden;
+}
+
+.articulos:hover{
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.534);
+}
+
+.galeria .mercha{
+    display: grid;
+}   
+
+footer{
+    background-color: #879923;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+
+}
+
+footer a:hover{
+    font-weight: bolder;
+}
+
+/*RESPONSIVE*/
+
+
+@media(min-width:520px){
+    .galeria .mercha{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+
+@media(min-width:728px){
+    .galeria .mercha{
+        grid-template-columns: repeat(3, 33.3%);
+    }
+}
+
+@media(min-width:1024px){
+    .galeria .mercha{
+        grid-template-columns: repeat(4, 25%);
+    }
+}
+
+/*SERVLETS*/
+
+main{
+    color: white;
+    text-align: center;
+    padding:3em;
+}
