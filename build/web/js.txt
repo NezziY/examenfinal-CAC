@@ -1,0 +1,18 @@
+response.setContentType("text/html");
+PrintWriter out = response.getWriter();
+
+out.println("<html>");
+out.println("<head>");
+out.println("<title>Mi página</title>");
+out.println("<link rel='stylesheet' href='estilos.css'>");
+out.println("</head>");
+out.println("<body>");
+out.println("<h1>Bienvenido a mi página</h1>");
+out.println("<p>Este es el contenido de mi página</p>");
+out.println("<script src='interaccion.js'></script>");
+out.println("</body>");
+out.println("</html>");
+
+
+
+929C13
