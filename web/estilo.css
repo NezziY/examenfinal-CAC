@@ -77,7 +77,7 @@ header{
     
 }
 
-.title:hover img{
+header:hover img{
     transform: translateY(10px) rotate(-7deg) translateY(9px);
 }
 
